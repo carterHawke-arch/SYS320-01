@@ -65,6 +65,6 @@ function GetShutdown {
         }
         $downtable
 }
-#GetLoginouts(6);
-GetStartup(900);
-GetShutdown(900);
+#GetLoginouts(15);
+GetStartup(25);
+GetShutdown(25);
