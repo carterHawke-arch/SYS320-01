@@ -90,6 +90,7 @@ do
 		get_availability
 	# TODO - 3 Display a message, if an invalid input is given
 	
-
+	else
+		echo "invalid input"
 	fi
 done
