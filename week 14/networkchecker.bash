@@ -37,9 +37,9 @@ function ExternalListeningPorts(){
 # Todo-2: Complete the ExternalListeningPorts that will print the port and application
 # that is listening on that port from network (using ss utility)
   ss -4ltpn \
-    | awk -F"[[:space:]:(),}+" '
+    | awk -F'[[:space:]:(),"]+' '
         /LISTEN/ && $4 !~ /^127\./ {
-	  gsub(/"/, "", $9)
+#	  gsub(/"/, "", $9)
 	  print $5, $9
 	}'
 }
